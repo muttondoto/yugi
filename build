@@ -1,0 +1,1 @@
+g++ -o bin/yugi src/main.cpp -lsqlite3
