@@ -1,0 +1,14 @@
+#!/bin/ruby
+
+require 'rest-client'
+require 'json'
+
+url = "https://db.ygoprodeck.com/api/v7/cardinfo.php?name=#{ARGV[0]}"
+response = RestClient.get url
+result = JSON.parse response.to_str
+
+desc = result['data'][0]['desc']
+type = result['data'][0]['type']
+
+puts desc
+puts type

@@ -41,6 +41,6 @@ int main(int argc, char const* argv[]){
    std::cout << "El texto de omega" << std::endl;
    std::cout << omega.txt << std::endl;
 
-   dbInit();
+   Tcreate();
    return 0;
 }
